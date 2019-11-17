@@ -1,0 +1,277 @@
+/*架構 沒有右邊版*/
+
+#sitebody{
+	width:100%;
+	font-size:13px;
+	background-color:#fefefe;
+}
+
+#header{
+	background-color:#1c1c1c;
+	height:125px;
+	text-align:left;
+	vertical-align: center;
+	line-height:80px;
+}
+
+#sidebar_left{
+	background-color:#43341b;
+	width:15%;
+	height:800px;
+	float:left;
+}
+
+#sidebar_right{
+	width:25%;
+	height:800px;
+	float: right;
+	background-color:#F2FFF2;
+	text-align:left;
+	line-height: 20px;
+}
+
+
+#footer{
+	clear:both;
+	color:#fcfaf2;
+	background-color:#1c1c1c;
+	height:130px;
+	text-align:center;
+	line-height:80px;
+}
+
+#content{
+	width: 60%;
+	float: left;
+	height: 800px;
+	background-color:#F2FFF2;
+	text-align:center;
+	line-height: 20px;
+}
+
+
+#logintable{
+	text-align: center;
+}
+
+#center{
+	text-align: center;
+}
+
+/*自訂 */
+
+.btn {
+    clear: left;
+    border:none;
+    float: left;
+    height: 40px;
+    width: 168px;
+    padding-top: 10px;
+    font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+    font-size: 35px;
+    color: #333;
+    margin-top: 5px;
+    text-align: center;
+ }
+
+ .title{
+    height: 53px;
+    width: 711px;
+    font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+    font-size: 200%;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+    text-align: left;
+}
+
+table{
+	font-family: "新細明體";
+	font-size: 15px;
+	line-height: 26px;
+	text-align: left;
+	width: 100%;
+
+}
+
+th{
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+.subtitle{
+  display: block;
+  margin-left: 100;
+  margin-right: 0;
+  border-top: 5px white;
+
+}
+
+.blank{
+	vertical-align: left;
+	padding-left: 5px;
+	width: 60%;
+}
+
+.blank_title{
+	 width:3%;
+	 background-color: #FFFFCC;
+	 text-align: center;
+	 margin: auto;
+}
+.blank_title_bg{
+	width: 5%;
+}
+
+
+
+.blank_bg{
+		width: 10%;
+		padding-left: 5%;
+	text-align: left;
+}
+
+.separator{
+    height: 10px;
+}
+
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.ver_separator{
+    width: 20px;
+}
+
+.button_table{
+	text-align: center;
+}
+
+.center {
+  margin: left;
+  width: 50%;
+  padding: 10px;
+
+}
+
+
+#div_top_hypers {
+    background-color:#FFECC9;
+    width: 100%;
+    display:inline;      
+}
+#ul_top_hypers li{
+    display: inline;
+}
+
+.float_right{
+	margin-left: auto;
+    margin-right: auto;
+
+}
+
+div{
+	display:block;
+}
+
+.search-wrapper{
+	background-color: white;
+	border: 10px;
+	border-color: black;
+}
+
+.main-search{
+    min-height: 82px;
+    border-bottom: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.subtitle{
+	width: 20%;
+}
+
+
+/* 首頁按鈕*/
+
+
+/*按鈕*/
+#btcmn{
+	text-decoration: none;
+	color:#fcfaf2;
+	text-align :center;
+
+}
+
+#btnh{
+    background-color: #1c1c1c;
+    border: 2px solid #fcfaf2;
+    float:right;
+    height:30%;
+    width: 5%;
+    margin-top: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    font-weight: bold;
+
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+#btnh:hover{
+	background-color: #b54434;
+	font: Microsoft JhengHei;
+}
+
+#divlbtn{
+	height: 5%;
+	padding:20px;
+	float:center;
+}
+
+#leftbtn{
+	float:center;
+ 	background-color: #43341b;
+ 	border: 2px solid #fcfaf2;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 90%;
+    transition-duration: 0.4s;
+    font: Microsoft JhengHei;
+}
+
+#leftbtn:hover{
+	background-color: #b54434;
+	font-size: 25px;
+}
+
+/*內文*/
+#flowchart{
+	float:left;
+	margin-top: 10px;
+	height: 400px;
+}
+
+#intro{
+	font: Microsoft JhengHei;
+	float:left;
+	text-align:left;
+	font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin: 30px;
+    padding: 10px
+}
+
+#footcon{
+	text-align: center;
+	font: Microsoft JhengHei;
+	font-size: 10px;
+	line-height: 24px;
+}

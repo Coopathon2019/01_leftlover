@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'CSS/bootstrap-4.3.1-dist/css/bootstrap.css' %}"/>
+		<link rel="stylesheet" href="{% static 'CSS/form.css' %}"/>
+		<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+	    <script src="{% static 'css/bootstrap-4.3.1-dist/js/bootstrap.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>  
+
+	  <title>智慧化廚餘黑水虻媒合平台</title>
+	</head>
+
+	<body>
+		<div id="sitebody">
+		<div id="header">智慧化廚餘黑水虻媒合平台</div>
+
+		<!--start left-sidebar-->
+
+			<div id="sidebar_left">
+		        <div class="btn">
+		          <a href="homepage">首頁</a>
+		        </div>
+
+		        <div class="btn">
+		          <a href="platform">媒合平台</a>
+		        </div>
+
+		        <div class="btn">
+		          <a href="login">黑水虻戶登入</a>
+		        </div>
+			</div>
+		<!--/ left-sidebar-->
+
+
+		<div id="content">
+
+			<div class="container">
+
+			<div class="center">
+				<h4 class="title" align="left">黑水虻戶註冊</h4>
+			</div>
+			    <!-- this is a simple nav bar for selecting between images -->
+
+
+
+			        <!--/start navbar-->
+			        
+		        <div id="div_top_hypers">
+		          <ul  id="ul_top_hypers">
+		            <li class="active"><a href="登入頁面.html">登入</a></li>
+
+		            <li style="padding-left:2em"><a href="#">註冊</a></li>
+		          </ul>
+		        </div><!--/ un-collapsed navbar-->
+
+
+		  	</div>
+
+		  	&nbsp;
+
+			<table width="92%" border="0" align ="center">
+				<tbody>
+			   		<tr>
+			   			<td>
+			   				<form id="registerForm">
+			   					<!--
+			   					<select name="county">
+									<option value="基隆市">基隆市</option>
+									<option value="台北市">台北市</option>
+									<option value="台北縣">台北縣</option>
+									<option value="桃園縣">桃園縣</option>
+									<option value="新竹市">新竹市</option>
+									<option value="新竹縣">新竹縣</option>
+									<option value="苗栗縣">苗栗縣</option>
+									<option value="台中市">台中市</option>
+									<option value="台中縣">台中縣</option>
+									<option value="彰化縣">彰化縣</option>
+									<option value="南投縣">南投縣</option>
+									<option value="雲林縣">雲林縣</option>
+									<option value="嘉義市">嘉義市</option>
+									<option value="嘉義縣">嘉義縣</option>
+									<option value="台南市">台南市</option>
+									<option value="台南縣">台南縣</option>
+									<option value="高雄市">高雄市</option>
+									<option value="高雄縣">高雄縣</option>
+									<option value="屏東縣">屏東縣</option>
+									<option value="台東縣">台東縣</option>
+									<option value="花蓮縣">花蓮縣</option>
+									<option value="宜蘭縣">宜蘭縣</option>
+									<option value="澎湖縣">澎湖縣</option>
+									<option value="金門縣">金門縣</option>
+									<option value="連江縣">連江縣</option>
+								</select>-->
+								<div>用戶名<input type="text" name=paName></div>								
+								<div>地點<input type="text" name=paLocation></div>
+								<div>縣市<select name="paCity">
+									<option value="基隆市">基隆市</option>
+									<option value="台北市">台北市</option>
+									<option value="台北縣">新北市</option>
+									<option value="桃園縣">桃園縣</option>
+									<option value="新竹市">新竹市</option>
+									<option value="新竹縣">新竹縣</option>
+									<option value="苗栗縣">苗栗縣</option>
+									<option value="台中市">台中市</option>
+									<option value="台中縣">台中縣</option>
+									<option value="彰化縣">彰化縣</option>
+									<option value="南投縣">南投縣</option>
+									<option value="雲林縣">雲林縣</option>
+									<option value="嘉義市">嘉義市</option>
+									<option value="嘉義縣">嘉義縣</option>
+									<option value="台南市">台南市</option>
+									<option value="台南縣">台南縣</option>
+									<option value="高雄市">高雄市</option>
+									<option value="高雄縣">高雄縣</option>
+									<option value="屏東縣">屏東縣</option>
+									<option value="台東縣">台東縣</option>
+									<option value="花蓮縣">花蓮縣</option>
+									<option value="宜蘭縣">宜蘭縣</option>
+									<option value="澎湖縣">澎湖縣</option>
+									<option value="金門縣">金門縣</option>
+									<option value="連江縣">連江縣</option>
+								</select></div>
+								<div>電話<input type="text" name=paPhone></div>
+								<div>電子信箱<input type="text" name=paMail></div>
+								<div>密碼<input type="password" name=paPassword></div>
+								<div><input type="submit" onClick="AddAccount()"></div>
+							</form>
+			   			</td>
+			   		</tr>
+			   </tbody>
+			</table>
+			  </tr>
+			  <tr>
+			  </tr>
+		</div>
+		<div id="sidebar_right">sidebar_right</div>
+		<div id="footer">footer</div>
+		</div>
+	</body>
+</html>

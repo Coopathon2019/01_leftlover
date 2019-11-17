@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'CSS/bootstrap.css' %}"/>
+		<link rel="stylesheet" href="{% static 'CSS/首頁.css' %}"/>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	  <title>智慧化廚餘黑水虻媒合平台</title>
+	</head>
+
+	<body>
+		<div id="sitebody">
+
+			<div id="header">
+				<img src="{% static 'img/Header.svg' %}"
+					width=40%
+				/>
+
+				<button type="button" class="btn btn-outline-secondary" id="btnh"><a href="register" id="btcmn"  style="font-family: Microsoft JhengHei;">註冊</a></button>
+				<button type="button" class="btn btn-outline-secondary" id="btnh"><a href="login" id="btcmn"  style="font-family: Microsoft JhengHei;">登入</a></button>
+			</div>
+
+			<div id="sidebar_left">
+				<div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="/" id="btcmn">首頁</a></button><br>
+		        </div>
+		        <p>        </p>
+		        <p>        </p><br>
+		        <div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="moninfo" id="btcmn">虻知識</a></button>
+		        </div>
+		         <p>        </p>
+		         <p>        </p><br>
+		        <div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="login" id="btcmn">我要買廚餘</a></button>
+		      	</div>
+		      	 <p>        </p>
+		      	 <p>        </p><br>
+		      	<div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="platform" id="btcmn">我要賣廚餘</a></button>
+		      	</div>
+			</div>
+
+		<div id="content">
+
+			<div id="intro">
+			<p>
+				我們是智慧廚餘-黑水虻平台，透過媒合廚餘的生產端與需求端，藉此增加廚餘的效益。<br>我們推廣黑水虻作為廚餘的解決方案，利用廚餘養黑水虻，再將黑水虻作為飼料使用，取代現今有較高風險的廚餘養豬、養雞、製作各種飼料，將廚餘轉化為更泛用的產品。
+			</p>
+			</div>
+
+			<div>
+			<img
+				id="flowchart"
+				src="{% static 'img/流程圖.svg' %}"
+				width=100%
+			/>
+			</div>
+
+			<div id=intro>
+			<p >
+				在107 年度，台灣一共回收了 59萬噸的廚餘，為了解決大量的廚餘因應而生的問題，我們建立了這個平台。<br>
+				廚餘供應商可在本平台在瀏覽與我們合作的黑水虻養殖戶，並且聯絡這些客戶，將原本是廢棄物的廚餘轉化成為產品，成功解決廚餘問題。<br>
+				黑水虻養殖戶可以在本平台進行註冊，與我們合作，登記所需要的廚餘量，接著便可以等待廚餘供應商來提供廚餘了，別忘了黑水虻收成之後回來回報成交，並且提供我們本次養殖的資料。<br>
+				我們設計了智慧演算法，提供用戶評估自己的黑水虻量可以消耗多少廚餘，或是自己的廚餘量需要多少的黑水虻來處理，方便用戶進行管理。同時用戶所回報的資料將會作為分析改善的基礎，使我們的智慧演算法變得更聰明、更精確。
+				我們也提供了虻知識-黑水虻知識推廣平台，整合了許多黑水虻養殖相關的資料與知識，讓投入黑水虻養殖的朋友可以對黑水虻的養殖、加工、應用有更多的了解，增進知識。
+			</p>
+			</div>
+
+		</div>
+		
+		<div id="footer">
+			<p id="footcon">
+				2019食農合作松<br>
+				製作團隊：112.212<br>
+				團隊成員：鄧景升、楊策博、蔣永寬、張詠涵、李俊翰<br>
+				(106) 台北市羅斯福路四段一號 農藝學系<br>
+				National Taiwan University, No. 1, Section 4, Roosevelt Road, Taipei 106, Taiwan
+			</p>
+		</div>
+		</div>
+	</body>
+</html>

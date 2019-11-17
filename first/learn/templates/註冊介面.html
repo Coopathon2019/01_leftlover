@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'CSS/bootstrap.css' %}"/>
+		<link rel="stylesheet" href="{% static 'CSS/註冊介面.css' %}"/>
+		<script src="{% static 'js/main.js' %}"></script> 
+
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	  <title>智慧化廚餘黑水虻媒合平台</title>
+	</head>
+
+	<body>
+		<div id="sitebody">
+
+
+		<div id="header">
+				<img src="{% static 'img/Header.svg' %}"
+					width=40%
+				/>
+
+				<button type="button" class="btn btn-outline-secondary" id="btnh"><a href="register" id="btcmn"  style="font-family: Microsoft JhengHei;">註冊</a></button>
+				<button type="button" class="btn btn-outline-secondary" id="btnh"><a href="login" id="btcmn"  style="font-family: Microsoft JhengHei;">登入</a></button>
+			</div>
+
+			<div id="sidebar_left">
+				<div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="/" id="btcmn">首頁</a></button><br>
+		        </div>
+		        <p>        </p>
+		        <p>        </p><br>
+		        <div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="moninfo" id="btcmn">虻知識</a></button>
+		        </div>
+		         <p>        </p>
+		         <p>        </p><br>
+		        <div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="login" id="btcmn">我要買廚餘</a></button>
+		      	</div>
+		      	 <p>        </p>
+		      	 <p>        </p><br>
+		      	<div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="platform" id="btcmn">我要賣廚餘</a></button>
+		      	</div>
+			</div>
+		<!--/ left-sidebar-->
+
+
+		<div id="content">
+
+			<div class="container">
+
+				<div class="center">
+					<h4 class="title" align="left">黑水虻戶註冊</h4>
+				</div>
+			    <!-- this is a simple nav bar for selecting between images -->
+
+
+
+			        <!--/start navbar->
+			        
+		        <div id="div_top_hypers">
+		          <ul  id="ul_top_hypers">
+		            <li class="active"><a href="#">登入</a></li>
+
+		            <li style="padding-left:2em"><a href="註冊介面.html">註冊</a></li>
+		          </ul>
+		        </div><!-/ un-collapsed navbar-->
+
+
+		  	</div>
+
+		  	&nbsp;
+
+		  	<div style="width: 50px;">
+		  		
+		  	</div>
+
+			<table width="92%" border="0" align ="left">
+				<div id="registertable">
+				<tbody>
+			   		<tr>
+			   			<td>
+			   				<form id="registerForm">
+								<div>用戶名：<input type="text" name=paName></div><br>						
+								<div>地點：<input type="text" name=paLocation></div><br>
+								<div>縣市：<select name="paCity" style="width: 90px;height: 30px;">
+									<option value="基隆市">基隆市</option>
+									<option value="台北市">台北市</option>
+									<option value="台北縣">新北市</option>
+									<option value="桃園縣">桃園縣</option>
+									<option value="新竹市">新竹市</option>
+									<option value="新竹縣">新竹縣</option>
+									<option value="苗栗縣">苗栗縣</option>
+									<option value="台中市">台中市</option>
+									<option value="台中縣">台中縣</option>
+									<option value="彰化縣">彰化縣</option>
+									<option value="南投縣">南投縣</option>
+									<option value="雲林縣">雲林縣</option>
+									<option value="嘉義市">嘉義市</option>
+									<option value="嘉義縣">嘉義縣</option>
+									<option value="台南市">台南市</option>
+									<option value="台南縣">台南縣</option>
+									<option value="高雄市">高雄市</option>
+									<option value="高雄縣">高雄縣</option>
+									<option value="屏東縣">屏東縣</option>
+									<option value="台東縣">台東縣</option>
+									<option value="花蓮縣">花蓮縣</option>
+									<option value="宜蘭縣">宜蘭縣</option>
+									<option value="澎湖縣">澎湖縣</option>
+									<option value="金門縣">金門縣</option>
+									<option value="連江縣">連江縣</option>
+								</select></div><br>
+								<div>電話：<input type="text" name=paPhone></div><br>
+								<div>電子信箱：<input type="text" name=paMail></div><br>
+								<div>密碼：<input type="password" name=paPassword></div><br>
+								<div><input type="submit" onClick="AddAccount()" style="width: 60px;" align="center"></div>
+			   				</form>
+			   			</td>
+			   		</tr>
+			   		</tbody>
+			   	</div>
+			</table>
+			  </tr>
+			  <tr>
+			  </tr>
+		</div>
+
+
+		<div id="sidebar_right"></div>
+
+
+
+		<div id="footer">
+			<p id="footcon">
+				2019農業合作松<br>
+				製作團隊：112.212<br>
+				團隊成員：鄧景升、楊策博、蔣永寬、張詠涵、李俊翰<br>
+				(106) 台北市羅斯福路四段一號 農藝學系<br>
+				National Taiwan University, No. 1, Section 4, Roosevelt Road, Taipei 106, Taiwan
+			</p>
+		</div>
+		</div>
+	</body>
+</html>

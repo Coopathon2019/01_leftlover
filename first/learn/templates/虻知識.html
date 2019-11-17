@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+
+ 
+<html>
+    <head>
+            <link rel="stylesheet" href="{% static 'CSS/黑水bootstrap.css' %}"/>
+            <link rel="stylesheet" href="{% static 'CSS/虻知識.css' %}"/>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <title>
+            智慧化廚餘黑水虻媒合平台 
+        </title>
+        
+    </head>
+    
+    <body>
+ 
+        <div id="sitebody">
+            <div id="header">
+                <img src="{% static 'img/Header.svg' %}"
+                  width=40%
+                />
+
+                <button type="button" class="btn btn-outline-secondary" id="btnh"><a href="register" id="btcmn"  style="font-family: Microsoft JhengHei;">註冊</a></button>
+                <button type="button" class="btn btn-outline-secondary" id="btnh"><a href="login" id="btcmn"  style="font-family: Microsoft JhengHei;">登入</a></button>
+              </div>
+
+              <div id="sidebar_left">
+                <div id="divlbtn">
+                      <button type="button" id="leftbtn"><a href="/" id="btcmn">首頁</a></button><br>
+                    </div>
+                    <!--<p>        </p>-->
+                    <div id="divlbtn" >
+                      <button type="button" id="leftbtn"><a href="moninfo" id="btcmn">虻知識</a></button>
+                    </div>
+                    <!--<p>       <p>        </p> </p>--> 
+                    <div id="divlbtn">
+                      <button type="button" id="leftbtn"><a href="login" id="btcmn">我要買廚餘</a></button>
+                    </div>
+                     <!--<p>        </p> --> 
+                    <div id="divlbtn">
+                      <button type="button" id="leftbtn"><a href="platform" id="btcmn">我要賣廚餘</a></button>
+                    </div>
+              </div>
+ 
+                    <!--start left-sidebar-->
+            
+                    <!--<div id="sidebar_left">
+            
+                        <div class=" btn btn2">
+                          <p></p>
+                        </div>
+            
+                        <div class=" btn btn2">
+                          <a href="">首頁</a>
+                        </div>
+            
+                        <div class=" btn btn2">
+                          <a href="">媒合平台</a>
+                        </div>
+            
+                        <div class=" btn btn2">
+                          <a href="">黑水虻戶登入</a>
+                        </div>
+                    </div>-->
+                    <!--/ left-sidebar-->
+ 
+                
+                    <!-- this is a simple nav bar for selecting between images-->
+ 
+        <!--principle content-->
+ 
+        <!--習性與益處-->
+ 
+        <div class="content">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title" style="font-weight: bold;">
+                    <a data-toggle="collapse" href="#collapse1" >習性與益處</a>
+                  </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item">益處
+                        <p>
+                            一隻幼蟲在成長過程，約可以處理廚餘或農牧廢棄物2～3公斤，糞便可以做有機肥，牠本身更是可以做為動物飼料中蛋白質來源，可餵食雞、牛、豬、魚等。黑水虻相較市面上充當畜牧飼料蛋白質的骨粉、魚粉，更為安全，不會造成海洋資源枯竭或是牲畜感病的風險。黑水虻幼蟲可以在水中生存，還可為水產養殖的活體餌料。
+                        </p>
+                    </li>
+                    <li class="list-group-item">生命週期
+                        <p>
+                            大約為28天：卵期約為3～4天，幼蟲期則有18天左右。成蟲口器退化，僅靠『水』維繫生命，也不會騷擾人類。牠交配、產卵完不久便死亡，一隻水虻一次可產800到1000個卵。
+                        </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+        <!--飼養方式(廚餘處理)-->
+ 
+        <div class="content">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title" style="font-weight: bold;">
+                    <a data-toggle="collapse" href="#collapse2">飼養方式(廚餘處理)</a>
+                  </h4>
+                </div>
+                <div>
+                  <img src="{% static 'img/process.jpg' %}" class="img-rounded" alt="Cinque Terre" style="width: 1000px;">
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item">廢棄物前處理
+                        <p>
+                            首先須確認無有害或是非有機物質，再把餐廚垃圾用粉碎機粉碎。若粉碎後的飼料含水過高，可先濾乾至含水率60
+                        </p>
+                    </li>
+                    <li class="list-group-item"> 幼蟲飼養（廢棄物處理）
+                        <p>
+                            剛剛孵化的小幼蟲體色為乳白色，逐漸長大變灰白、褐色、黑褐色，將蟲苗移到幼蟲飼養盒，餵食生物廢棄物。此區，幼蟲取食生物廢棄物，長大成大型幼蟲，進而消耗廢棄物。
+                        </p>
+                    </li>
+                    <li class="list-group-item">成品收成
+                        <p>
+                            在快要變成前蛹時，從幼蟲飼養盒中收取幼蟲。飼養盒中的殘餘物，本身也是有價值的產物。
+                        </p>
+                    </li>
+                    <li class="list-group-item">幼蟲煉製
+                        <p>
+                            可以進一步將幼蟲和殘餘物進行產品的加工，我們稱之為｢產品純化｣，可用篩網將幼蟲與殘餘物分開。接者，是殺死幼蟲，幼蟲純化的其他步驟，可以是凍結或乾燥幼蟲，或將幼蟲油與幼蟲蛋白質分離。
+                        </p>
+                    </li>
+                  </ul> 
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+         <!--成蟲飼養(蟲卵取得)-->
+ 
+         <div class="content">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title" style="font-weight: bold;">
+                    <a data-toggle="collapse" href="#collapse3">成蟲飼養(蟲卵取得)</a>
+                  </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                        <table width="600" border="1">
+                            <tr>
+                                    　<td>設備</td>
+                                    　<td>成蟲飼養（10天）</td>
+                                    　</tr>
+                                    　<tr>
+                                    　<td>黑水虻的飼養場地，最好光線直射充足，通風良好的地方。需有成蟲交配網產卵網室，及防鼠的幼蟲飼養室，台灣可周年飼養。
+                                      </td>
+                                    　<td>蛹期須有乾草堆供其羽化。成蟲只要植物和水。黑水虻成蟲飼養是整個黑水虻養殖配套技術的關鍵。只有養好成蟲，才能獲得大量的蟲卵。</td>
+                                    　</tr>
+ 
+                       </table>
+                    
+                    </li>
+                    <li class="list-group-item">
+                        <table width="600" border="1">
+                            <tr>
+                                  <td>成蟲室及產卵箱製作</td>
+                                  <td>黑水虻成蟲期會飛翔，所以要有防逃設施。寬2米長3米高2米立體架子，外面套上泥龍網或鐵窗沙，留一個便於人員出入的門。內部放一張接卵桌，項部接裝自動噴霧器（手壓式也可）。桌上放一個或多個誘集收卵盤，在自然光下（成蟲交配需要太陽光的刺激），太陽光可遮蔭的30～40%，成蟲期不吃食，只需要植物葉片上的水分。</td>
+                            </tr>
+                            <tr>
+                                  <td>產卵工具</td>
+                                  <td>瓦楞紙或珍珠板製成集卵器，放在飼養桶飼料上方10公分處。</td>
+                            </tr>
+                            <tr>
+                                　<td>孵化期</td>
+                                　<td>約四天，把卵塊放置在少量飼料之容器進行孵化。</td>
+                            </tr>
+                            <tr>
+                            　  <td>培養箱</td>
+                            　  <td>養殖箱可以用二格籃，上置細紗布，便於通氣排除多餘水份。</td>
+                            </tr>
+                        </table>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <div id="footer">
+              <p id="footcon">
+                2019農業合作松<br>
+                製作團隊：112.212<br>
+                團隊成員：鄧景升、楊策博、蔣永寬、張詠涵、李俊翰<br>
+                (106) 台北市羅斯福路四段一號 農藝學系<br>
+                National Taiwan University, No. 1, Section 4, Roosevelt Road, Taipei 106, Taiwan
+              </p>
+            </div>
+ 
+    </body>
+</html>

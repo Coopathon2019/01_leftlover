@@ -1,0 +1,30 @@
+.vfc_box{
+	border:1px;
+	padding-left: 10px;
+	width:80%;
+	margin: 0px auto;
+	border-color: black;
+	border-style: solid;
+	padding: 1em;
+}
+
+
+.date{
+	font:;
+}
+
+.vfc_text{
+	padding-left: 20px; padding-top: 10px;
+}
+
+.date{
+	font-family:微軟正黑體;
+	 font-weight: bold;
+}
+
+
+.blank_bg{
+	width: auto;
+	padding-left: 5%;
+	text-align: left;
+}

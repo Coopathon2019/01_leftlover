@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html>
+	<head>
+				<!-- this is a simple nav bar for selecting between images -->
+
+		<link rel="stylesheet" href="{% static 'CSS/bootstrap-4.3.1-dist/css/bootstrap.css' %}"/>
+		<link rel="stylesheet" href="{% static 'CSS/form.css' %}"/>
+		<link rel="stylesheet" href="{% static 'CSS/user.css' %}"/>
+		<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+	    <script src="{% static 'css/bootstrap-4.3.1-dist/js/bootstrap.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>  
+
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+	  <title>智慧化廚餘黑水虻媒合平台</title>
+	</head>
+
+	<body>
+		<div id="sitebody">
+			<div id="header">智慧化廚餘黑水虻媒合平台</div>
+
+			<!--start left-sidebar-->
+
+			<div id="sidebar_left">
+		        <div class="btn">
+		          <a href="homepage">首頁</a>
+		        </div>
+
+		        <div class="btn">
+		          <a href="platform">媒合平台</a>
+		        </div>
+
+		        <div class="btn">
+		          <a href="login">黑水虻戶登入</a>
+		        </div>
+			</div>
+		<!--/ left-sidebar-->
+
+
+		<div id="content">
+			<div class="container">
+				<div class="container">
+
+					<div class="center">
+						<h4 class="title" align="left">用戶介面</h4>
+					</div>
+				    <!-- this is a simple nav bar for selecting between images -->
+
+			  	</div>
+
+			  	&nbsp;
+
+				
+		  	</div>
+
+		  	<div style="padding-left: 5%;", align="left">
+			  	<p>
+				  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				    我要收廚餘
+				  </button>
+				</p>
+			</div>
+			<div class="collapse" id="collapseExample">
+				<table width="92%" border="0" align ="left">
+					<tbody>
+				   		<tr>
+				   			<td>
+				   				<!--
+				   				<form name="form1" method="post" action="?page=change_a">
+				   					<input type="hidden" name="action" value="a">
+				   						<table width="95%" border="0" cellpadding="10" align="center" cellspacing="1" id="TableStyle02" bordercolor="#ccc">
+					   						<tbody>
+					   							<tr>
+					   								<td class="blank_title_bg">   <!- 標題前空格 ->
+							   							<th class="blank_title" align="center">
+							   								<div>可接受廚餘量</div>
+							   							</th>
+						   							</td>
+						   							<td class="blank_bg">
+						   								<input type="TEXT" name="PaName" maxlength="25"
+						   								size="20" class="blank">
+						   							</td>
+					   							</tr>
+
+					   							<tr class="separator" colspan="2"></tr>
+
+					   							<tr>
+					   								<td class="blank_title_bg">  <!- 標題前空格 ->
+							   							<th class="blank_title" align="center">
+							   								<div>備註</div>
+							   							</th>
+							   						</td>
+						   							<td class="blank_bg">
+						   								<input type="TEXT" name="PaName" maxlength="25"
+						   								size="20" class="blank">
+						   							</td>
+					   							</tr>
+
+					   						</tbody>
+				   						</table>
+
+					   					<table width="100%">
+					   					
+					   							<tr>
+					   								<td align="center">
+					   									<a href="">
+					   										<input type="button" value="發送" onclick="location.href='要前往的網頁連結'">
+					   									</a>
+					   								</td>
+					   							</tr>
+					   					
+					   					</table>
+				   				</form>
+				   				-->
+				   				<form id="BookingForm">
+									<div>可接受廚餘量<input type="text" name=paQuantity></div>
+									<div>備註<input type="text" name=paRemark></div>
+									<div><input type="button" onClick="AddBooking()" value="送出"></div>
+								</form>
+								<button id="refreshBooking" onClick="QueryBookingList()">重新整理</button>
+				   			</td>
+				   		</tr>
+				   </tbody>
+				</table>
+			</div>
+
+			<div id="historyBookingDiv">				
+				<table class="table">
+					<thead class="thead-dark">
+						<tr style="text-align: left;">
+							<th>日期</th>
+							<th>可接受廚餘數量</th>
+							<th>備註</th>
+						</tr>
+					</thead>
+					<tbody id="BookingListInnerTable">
+						
+					</tbody>
+				</table>
+			</div>
+
+
+		</div>
+
+
+		<div id="sidebar_right">sidebar_right</div>
+		<div id="footer">footer</div>
+
+	</body>
+</html>

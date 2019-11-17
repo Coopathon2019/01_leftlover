@@ -1,0 +1,51 @@
+#sitebody{
+	width:100%;
+	font-size:13px;
+}
+
+#header{
+	background-color:#FFD4D4;
+	height:80px;
+	text-align:center;
+	line-height:80px;
+}
+
+#sidebar_left{
+	background-color:#FFECC9;
+	width:20%;
+	height:4000px;
+	text-align:center;
+	line-height:400px;
+	float:left;
+}
+
+#content{
+	width: 60%;
+	float: left;
+	height:4000px;
+	background-color:#F2FFF2;
+	text-align:center;
+	line-height:400px;
+}
+
+#sidebar_right{
+	background-color:#FFECC9;
+	width:20%;
+	height:4000px;
+	text-align:center;
+	line-height:400px;
+	float:left;
+}
+
+#footer{
+	clear:both;
+	background-color:#FFD4D4;
+	height:80px;
+	text-align:center;
+	line-height:80px;
+}
+
+*{
+padding:0;
+margin:0;
+}

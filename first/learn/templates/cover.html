@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>MethGET</title>
+    <script src="{% static 'js/submit_query.js' %}" defer></script>
+    <script src="{% static 'js/ChangeDisabled.js' %}" defer></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/coverset.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--<script src="{% static 'js/jquery-3.4.1.min.js'  %}" defer></script>-->
+    <!--<script src="{% static 'js/main.js'  %}" defer></script>-->
+    <script src="{% static 'js/savesubmit.js'  %}" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'CSS/slick.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'CSS/slick-theme.css' %}"/>
+  </head>
+
+
+
+
+<script>
+    $(document).ready(function(){
+        $("#menu.li").css("background-color","lightblue");
+        $("#welcometomethget").css("background-color","gray");
+        });
+</script>
+
+
+<div id="ToolName">
+  <a href="/">
+    <div style="float: left;font-weight:bold;font-size: 35px;color:#3399ff; letter-spacing: 1px;">Meth</div><!--#3399ff; #99ccff-->
+    <div style="float: left;font-weight:bold;font-size: 35px;color: #555555;letter-spacing: 3px;">GET</div>
+  </a>
+  <div style="float: left;font-size: 20px;margin-top: 15px;margin-left: 3px;color: #336699;">
+  web-based bioinformatics software for correlating genome-wide DNA methylation and gene expression 
+  </div>
+</div>
+
+
+
+
+<div id="whole">
+  <div id="menu" style="float: left;">
+  <ul>
+    <!--<li style="width:20% "><a>MethGET</a></li>-->
+      <li style="width:10% " id='welcometomethget'><a href="/">Welcome</a></li>
+      <li style="width:20% " id='uplo'><a href="/upload">Upload and sign in</a></li>
+
+      <li style="width:30% " id="sin"><a href="#">Single Methylome Analyses<b class="arrow"></b></a>
+          <ul>
+            <li><a href="/scatter">Correlation</a></li>
+            <li><a href="/rankscatter">Ordinal Association</a></li>
+            <li><a href="/grouping">Grouping Statistics</a></li>
+            <li><a href="/metaplot">Metagene</a></li>
+         </ul>
+     </li>
+
+      <li style="width:30% " id='multi'><a href="#">Multiple Methylome Analyses<b class="arrow"></b></a>
+          <ul>
+            <li><a href="/deltascatter">Comparison</a></li>
+            <li><a href="/heatmap">Heatmap</a></li>
+          </ul>
+      </li>
+      
+      <li style="width:10% " id='tuto'><a href="/tuto">Tutorial</a></li>
+    </ul>
+</div>
+
+  <div id ="leftside">
+      <div id="intro">
+          <h2 id="welcometomethget">Welcome to MethGET!</h2>
+          <hr />
+          <h4 style="text-align: left;">
+            MethGET is a web-based software for analyzing the correlation between genome-wide DNA methylation and gene expression. Stand-alone version can also be available on 
+              <a href="https://github.com/Jason-Teng/MethGET" style="font-size: 17px;">https://github.com/Jason-Teng/MethGET</a>.
+          </h4><br>
+
+          <div id="feature" style="">
+            <h2 style="text-align: center;">Features</h2><br>
+              <div style="position: relative;left: -15px;">
+                <img src="{% static 'img/feature.png' %}" alt="" height="300" width="750"><br><br>
+              </div>
+          </div>
+      </div>
+
+      <div id="example_part">
+        <h2 id="results_1">Analyses Examples</h2>
+        <hr />
+            <div class="slick" style="border:0.5px lightgray ridge;">
+              <img src="{% static 'img/covershow/scatter.png' %}" alt="" height="330" width="600">
+              <img src="{% static 'img/covershow/rankscatter.png' %}" alt="" height="330" width="600">
+              <img src="{% static 'img/covershow/grouping.png' %}" alt="" height="330" width="600">
+              <img src="{% static 'img/covershow/metagene.png' %}" alt="" height="330" width="600">
+              <img src="{% static 'img/covershow/comparison.png' %}" alt="" height="330" width="600">
+              <img src="{% static 'img/covershow/heatmap.png' %}" alt="" height="350" width="600">
+            </div><br>
+      </div>
+
+
+    <div id="quickstart">
+      <h2 id="quickstarthead" style="text-align: center;">Quick Guide</h2>
+      <hr />
+      <div id="startsteps">
+          <h3 id="1uploaddata">1. Upload data</h3>
+
+          <ol style="font-size: 15px;">
+          <li>Enter Your Project Name and Email.</li>
+
+          <li>Upload DNA Methylation (CGmap.gz) and Gene Expression Files (Exp.txt).</li>
+
+          <li>Choose The Organism.</li>
+
+          <li>Click “submit” button.</li>
+          </ol>
+
+          <p>*you will receive 2 emails.</p>(1) start preprocessing mail (2) finish preprocessing mail (get account name)
+          <!--
+          <ol>
+          <li>start preprocessing mail </li>
+          <li>finish preprocessing mail (get account name)</li>
+          </ol>-->
+
+          <h3 id="2launchanalysis">2. Launch analysis</h3>
+          <ol style="font-size: 15px;">
+          <li>sign in the account name (example account is provided).</li>
+          <li>choose the parameters of analysis.</li>
+          <li>submit (minutes).</li>
+          </ol>
+
+          <h3 id="3getresults">3. GET results</h3>
+          <ol style="font-size: 15px;">
+            <li>see results of CG, CHG, CHH.</li>
+            <li>download selected figures and tables or just download all.</li>
+          </ol>
+
+          <p style="font-weight:bold;">Note</p>
+          <ul style="margin-left: -20px;">
+              <li><p>Single methylome: check the checkbox of the sample and upload a CGmap.gz and a Exp.txt</p> <p>(0.5hr per methylome for Arabidopsis)</p></li>
+
+              <li><p>metagene: check the checkbox of metagene (3.5hr per metage for Arabidopsis)</p></li>
+
+              <li><p>multiple-methylome: need at least one methylome in group treatment and group control (trt_1, ctrl_1)</p></li>
+          </ul>
+      </div>
+      <a href="http://140.109.56.62:8003/upload" style="font-size: 25px;text-align: center;">Get Started</a><br>
+    </div>  <br>
+
+
+
+
+
+
+
+      <div id ="inputtypesetting">
+           <h2 id="inputformat" style="text-align: center;">Input Format</h2>
+      <hr />
+
+          <h3 id="dnamethylationdatacgmap">DNA methylation data: CGmap</h3>
+
+          <p>CGmap files are the output of BS-Seeker2 aligning pipeline that contain information of DNA methylation level, read counts and methylation context of each cytosine. The instruction for generating CGmap can be 
+          freely available from <a href="http://pellegrini.mcdb.ucla.edu/BS_Seeker2/">here</a>.</p>
+
+          <table> 
+            <tr> 
+                  <td>Chr1</th>   <td>G</th>  <td>125</th>  <td>CHG</th>  <td>CA</td>  <td>0.82</td>  <td>9</td>  <td>11</td>
+            </tr> 
+             <tr> 
+                  <td>Chr1</th>   <td>G</th>  <td>126</th>  <td>CHH</th>  <td>CC</td>  <td>0.18</td>  <td>2</td>  <td>11</td>
+            </tr> 
+            <tr> 
+            <td>Chr1</th>    <td>G</th>  <td>129</th>  <td>CHH</th>  <td>CA</td>  <td>0.33</td>  <td>3</td>  <td>9</td>
+            </tr> 
+            <tr> 
+            <td>Chr1</th>   <td>C</th>  <td>135</th> <td>CHH</th>  <td>CA</td>  <td>0</td>  <td>0</td>  <td>12</td>
+            </tr> 
+            <tr> 
+            <td>Chr1</th>   <td>C</th>  <td>161</th>  <td>CG</th>  <td>CG</td>  <td>0.76</td>  <td>16</td>  <td>21</td>
+            </tr> 
+          <tr> 
+            <td>...</th>   <td>...</th>  <td>...</th>  <td>...</th>  <td>...</td>  <td>...</td>  <td>...</td>  <td>...</td>
+            </tr> 
+          </table><br>
+
+
+          <h3 id="geneexpressiondatatabdelimitedtextle">Gene expression data: Tab-delimited text ﬁle</h3>
+
+          <p>Tab-delimited text ﬁles contain the gene names and gene expression values. Official gene symbol is suggested to fit our build-in gene annotation.</p>
+
+          <table id="exptable"> 
+            <tr> 
+                  <td>AT1G01610</th>   <td>34.2495</th>  
+            </tr> 
+             <tr> 
+                  <td>AT1G01620</th>   <td>453.344</th> 
+            </tr> 
+            <tr> 
+            <td>AT1G01630</th>    <td>53.2985</th> 
+            </tr> 
+            <tr> 
+            <td>AT1G01640</th>   <td>40.7508</th> 
+            </tr> 
+            <tr> 
+            <td>AT1G01650</th>   <td>36.3414</th> 
+            </tr> 
+          <tr> 
+            <td>...</th>   <td>...</th> 
+            </tr> 
+          </table><br>
+
+
+          <h3 id="geneannotationgtffile">Gene annotation: GTF file</h3>
+
+          <p>GTF files contain gene names and transcript annotation of the genome that can be available from <a href="https://asia.ensembl.org/info/data/ftp/index.html">ensemble FTP</a>. The gene annotations for Arabidopsis, Rice, Human, and Mouse have built on the web.</p>
+      </div><br><br><br>
+    
+  </div>
+
+
+
+
+  <div id="rightside">
+
+  </div>
+
+</div>
+
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!--<script type="text/javascript" src="{% static 'js/slick.min.js'%}"></script>-->
+  <script type="text/javascript" src="{% static 'js/slick.js'%}"> </script>
+
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slick').slick({
+        dots: true,
+        arrows:true,  
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow:'<button type="button" class="slick-prev"></button>',
+        nextArrow:'<button type="button" class="slick-next"></button>',
+        
+
+      });
+
+    });
+  </script>
+
+
+
+
+
+</body>
+</html>
+

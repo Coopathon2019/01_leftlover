@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'CSS/bootstrap.css' %}"/>
+		<link rel="stylesheet" href="{% static 'CSS/用戶頁面.css' %}"/>
+				<!-- this is a simple nav bar for selecting between images -->
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="{% static 'js/main.js' %}"></script>  
+
+	  <title>智慧化廚餘黑水虻媒合平台</title>
+	</head>
+
+	<body>
+		<div id="sitebody">
+			<div id="header">
+				<img src="{% static 'img/Header.svg' %}"
+					width=40%
+				/>
+
+				<button type="button" class="btn btn-outline-secondary" id="btnh"><a href="register" id="btcmn"  style="font-family: Microsoft JhengHei;">註冊</a></button>
+				<button type="button" class="btn btn-outline-secondary" id="btnh"><a href="login" id="btcmn"  style="font-family: Microsoft JhengHei;">登入</a></button>
+			</div>
+
+			<div id="sidebar_left">
+				<div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="/" id="btcmn">首頁</a></button><br>
+		        </div>
+		        <p>        </p>
+		        <p>        </p><br>
+		        <div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="moninfo" id="btcmn">虻知識</a></button>
+		        </div>
+		         <p>        </p>
+		         <p>        </p><br>
+		        <div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="login" id="btcmn">我要買廚餘</a></button>
+		      	</div>
+		      	 <p>        </p>
+		      	 <p>        </p><br>
+		      	<div id="divlbtn">
+		          <button type="button" id="leftbtn"><a href="platform" id="btcmn">我要賣廚餘</a></button>
+		      	</div>
+			</div>
+		<!--/ left-sidebar-->
+
+
+		<div id="content">
+			<div class="container">
+				<div class="container">
+
+					<div class="center">
+						<h4 class="title" align="left">用戶介面</h4>
+					</div>
+				    <!-- this is a simple nav bar for selecting between images -->
+
+			  	</div>
+
+			  	&nbsp;
+
+				
+		  	</div>
+
+		  	<div style="padding-left: 5%;", align="left">
+			  	<p>
+				  <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				    我要收廚餘
+				  </button>
+				</p>
+			</div>
+			<div class="collapse" id="collapseExample">
+				<table width="92%" border="0" align ="left">
+					<tbody>
+				   		<tr>
+				   			<td>
+				   				<!--
+				   				<form name="form1" method="post" action="?page=change_a">
+				   					<input type="hidden" name="action" value="a">
+				   						<table width="95%" border="0" cellpadding="10" align="center" cellspacing="1" id="TableStyle02" bordercolor="#ccc">
+					   						<tbody>
+					   							<tr>
+					   								<td class="blank_title_bg">   <!- 標題前空格 ->
+							   							<th class="blank_title" align="center">
+							   								<div>可接受廚餘量</div>
+							   							</th>
+						   							</td>
+						   							<td class="blank_bg">
+						   								<input type="TEXT" name="PaName" maxlength="25"
+						   								size="20" class="blank">
+						   							</td>
+					   							</tr>
+
+					   							<tr class="separator" colspan="2"></tr>
+
+					   							<tr>
+					   								<td class="blank_title_bg">  <!- 標題前空格 ->
+							   							<th class="blank_title" align="center">
+							   								<div>備註</div>
+							   							</th>
+							   						</td>
+						   							<td class="blank_bg">
+						   								<input type="TEXT" name="PaName" maxlength="25"
+						   								size="20" class="blank">
+						   							</td>
+					   							</tr>
+
+					   						</tbody>
+				   						</table>
+
+					   					<table width="100%">
+					   					
+					   							<tr>
+					   								<td align="center">
+					   									<a href="">
+					   										<input type="button" value="發送" onclick="location.href='要前往的網頁連結'">
+					   									</a>
+					   								</td>
+					   							</tr>
+					   					
+					   					</table>
+				   				</form>
+				   				-->
+				   				<form id="BookingForm" style="text-align: center;">
+									<div>可接受廚餘量：<input type="text" name=paQuantity></div><br>
+									<div>備註：<input type="text" name=paRemark></div><br>
+									<div><input type="button" onClick="AddBooking()" value="送出"></div>
+								</form>
+								
+				   			</td>
+				   		</tr>
+				   </tbody>
+				</table>
+				&nbsp;
+			</div>
+
+			<div style="padding-left: 5%;", align="left">
+			  	<p>
+				  <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+				    我要計算廚餘量
+				  </button>
+				</p>
+			</div>
+			<div class="collapse" id="collapseExample2">
+				<table width="92%" border="0" align ="left">
+					<tbody>
+				   		<tr>
+				   			<td>
+				   				<form name="form1" method="post" action="?page=change_a">
+				   					<input type="hidden" name="action" value="a">
+				   						<table width="95%" border="0" cellpadding="10" align="center" cellspacing="1" id="TableStyle02" bordercolor="#ccc">
+					   						<tbody>
+					   							<tr >
+					   								<p style="padding-left: 10%; padding-right: 10%;">可以先取少量蟲(約2g)，計算其中的蟲數。以後，就可以用外插法，以重量來估算蟲數 。
+10,000隻蟲苗放在一個養蟲盒餵食 15公斤廢棄物（75％含水量），為期12天。</p>
+					   							</tr>
+					   							<tr>
+					   								<td class="blank_title_bg">   <!-- 標題前空格 -->
+							   							<th style="width: 50% ; padding-left: 90px;" align="center">
+							   								<div>輸入你2克的黑水虻數量</div>
+							   							</th>
+						   							</td>
+						   							<td>
+						   								<input id="inputx" type="number" value=10 min=0 max=100 style="width: 100px;
+						   								padding-right: 10%">隻
+						   							</td>
+					   							</tr>
+
+					   							<tr class="separator" colspan="2"></tr>
+
+					   							<tr>
+					   								<td class="blank_title_bg">  <!-- 標題前空格 -->
+							   							<th style="width: 50%; padding-left: 90px;">
+							   								<div>輸入黑水虻總重</div>
+							   							</th>
+							   						</td>
+						   							<td class="blank_bg">
+						   								<input id="inputy" type="number" value=2000 min=0 step="0.1" style="width: 100px;
+						   								padding-right: 10%">g
+						   							</td>
+					   							</tr>
+
+					   						</tbody>
+				   						</table>
+				   						&nbsp;
+
+					   					<table width="100%">
+					   							<tr>
+					   								<td align="center">
+					   									
+					   									<input type="button" id="submit" value="計算"  onClick="calculate()">
+					   								</td>
+					   							</tr>
+					   					</table>
+					   					&nbsp;
+					   					<table width="95%" border="0" cellpadding="10" align="center" cellspacing="1" id="TableStyle02" bordercolor="#ccc">
+					   						<tbody>
+					   							<tr >
+					   								<p style="padding-left: 10%; padding-right: 10%;">可以先取少量蟲(約2g)，計算其中的蟲數。以後，就可以用外插法，以重量來估算蟲數 。
+10,000隻蟲苗放在一個養蟲盒餵食 15公斤廢棄物（75％含水量），為期12天。</p>
+					   							</tr>
+					   							<tr>
+					   								<td class="blank_title_bg">   <!-- 標題前空格 -->
+							   							<th  style="width: 50%;" align="left">
+							   								<div>你所有的總黑水虻數量大約為</div>
+							   							</th>
+						   							</td>
+						   							<td>
+						   								<p id="outputnum">隻</p>
+						   							</td>
+					   							</tr>
+
+					   							<tr class="separator" colspan="2"></tr>
+
+					   							<tr>
+					   								<td class="blank_title_bg">  <!-- 標題前空格 -->
+							   							<th  style="width: 50%;" align="left">
+							   								<div>12天預計可吃廚餘重</div>
+							   							</th>
+							   						</td>
+						   							<td>
+						   								<p id="outputkg">kg</p>
+						   							</td>
+					   							</tr>
+
+					   						</tbody>
+				   						</table>
+
+
+
+				   				</form>
+				   			</td>
+				   		</tr>
+				   </tbody>
+				</table>
+				&nbsp;
+			</div>
+
+			<div id="historyBookingDiv">				
+				<table class="table" id="historyBookingTable" style="text-align: center;width: 600px;" align="center">
+					<thead class="thead-dark">
+						<tr style="text-align: left;">
+							<th>日期</th>
+							<th>可接受廚餘數量</th>
+							<th>備註</th>
+						</tr>
+					</thead>
+					<tbody id="BookingListInnerTable">
+						
+					</tbody>
+				</table>
+			</div>
+
+
+
+
+		</div>
+		<div id="sidebar_right">
+			
+		</div>
+
+		<div id="footer">
+			<p id="footcon">
+				2019農業合作松<br>
+				製作團隊：112.212<br>
+				團隊成員：鄧景升、楊策博、蔣永寬、張詠涵、李俊翰<br>
+				(106) 台北市羅斯福路四段一號 農藝學系<br>
+				National Taiwan University, No. 1, Section 4, Roosevelt Road, Taipei 106, Taiwan
+			</p>
+		</div>
+
+	</body>
+</html>
+
+
+
+<script type="text/javascript">
+	function calculate()
+	{
+		var a = document.getElementById("inputx").value;
+		var b = document.getElementById("inputy").value;
+
+		resultnum = Math.round(a * b / 2 *100)/ 100;
+		resultkg = Math.round( (15/10000) * resultnum *100)/100;
+		document.getElementById("outputnum").innerHTML = resultnum + "隻";
+		document.getElementById("outputkg").innerHTML = resultkg + "kg";
+	};
+</script>

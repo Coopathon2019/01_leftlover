@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'CSS/bootstrap-4.3.1-dist/css/bootstrap.css' %}"/>
+		<link rel="stylesheet" href="{% static 'CSS/form.css' %}"/>
+		<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+	    <script src="{% static 'css/bootstrap-4.3.1-dist/js/bootstrap.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>  
+
+	  <title>智慧化廚餘黑水虻媒合平台</title>
+	</head>
+
+	<body>
+		<div id="sitebody">
+		<div id="header">智慧化廚餘黑水虻媒合平台</div>
+
+		<!--start left-sidebar-->
+
+			<div id="sidebar_left">
+		        <div class="btn">
+		          <a href="homepage">首頁</a>
+		        </div>
+
+		        <div class="btn">
+		          <a href="platform">媒合平台</a>
+		        </div>
+
+		        <div class="btn">
+		          <a href="login">黑水虻戶登入</a>
+		        </div>
+			</div>
+		<!--/ left-sidebar-->
+
+
+		<div id="content">
+
+			<div class="container">
+
+			<div class="center">
+				<h4 class="title" align="left">黑水虻戶登入</h4>
+			</div>
+			    <!-- this is a simple nav bar for selecting between images -->
+
+
+
+			        <!--/start navbar-->
+			        
+		        <div id="div_top_hypers">
+		          <ul  id="ul_top_hypers">
+		            <li class="active"><a href="#">登入</a></li>
+
+		            <li style="padding-left:2em"><a href="註冊介面.html">註冊</a></li>
+		          </ul>
+		        </div><!--/ un-collapsed navbar-->
+
+
+		  	</div>
+
+		  	&nbsp;
+
+			<table width="92%" border="0" align ="center">
+				<tbody>
+			   		<tr>
+			   			<td>
+			   				<!--
+			   				<form name="form1" method="post" action="?page=change_a">
+			   					<input type="hidden" name="action" value="a">
+			   					<table width="95%" border="0" cellpadding="10" align="center" cellspacing="1" id="TableStyle02" bordercolor="#ccc">
+			   						<tbody>
+			   							<tr>
+			   								<td class="blank_title_bg">
+					   							<th class="blank_title" align="center">
+					   								<div>電話</div>
+					   							</th>
+				   							</td>
+				   							<td class="blank_bg">
+				   								<input type="TEXT" name="PaName" maxlength="25"
+				   								size="20" class="blank">
+				   							</td>
+			   							</tr>
+
+			   							<tr class="separator" colspan="2"></tr>
+
+			   							<tr>
+			   								<td class="blank_title_bg">
+					   							<th class="blank_title" align="center">
+					   								<div>密碼</div>
+					   							</th>
+					   						</td>
+				   							<td class="blank_bg">
+				   								<input type="TEXT" name="PaName" maxlength="25"
+				   								size="20" class="blank">
+				   							</td>
+			   							</tr>
+
+			   						</tbody>
+			   					</table>
+			   					<br>
+			   					<br>
+			   					<table width="100%">
+			   						<tbody>
+			   							<tr class="button_table">
+
+			   								<td width="120px"></td>
+			   								<td align="right">
+			   									<a href="">
+			   										<input type="button" value="登入" onclick="location.href='要前往的網頁連結'">
+			   									</a>
+			   								</td>
+
+			   								<td class="ver_separator"></td>
+
+			   								<td align="left">
+			   									<a href="">
+			   										<input type="button" value="忘記密碼" onclick="location.href='要前往的網頁連結'">
+			   									</a>
+			   								</td>
+			   							</tr>
+			   						</tbody>
+			   					</table>
+
+
+
+			   				</form>
+			   			-->
+			   			<form id="loginForm">
+							<div>電話<input type="text" name=paPhone></div>
+							<div>密碼<input type="password" name=paPassword></div>
+							<div><input id="submitBtn" type="button" onClick="Login()" value="登入"></div>
+						</form>
+			   			</td>
+			   		</tr>
+			   </tbody>
+			</table>
+			  </tr>
+			  <tr>
+			  </tr>
+		</div>
+		<div id="sidebar_right">sidebar_right</div>
+		<div id="footer">footer</div>
+		</div>
+	</body>
+</html>

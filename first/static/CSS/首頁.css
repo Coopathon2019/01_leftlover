@@ -1,0 +1,124 @@
+/*架構 沒有右邊版*/
+
+#sitebody{
+	width:100%;
+	font-size:13px;
+	background-color:#fefefe;
+}
+
+#header{
+	background-color:#1c1c1c;
+	height:125px;
+	text-align:left;
+	vertical-align: center;
+	line-height:80px;
+}
+
+#sidebar_left{
+	background-color:#43341b;
+	width:190px;
+	height:900px;
+	float:left;
+}
+
+#content{
+	width: 80%;
+	float: left;
+	height:900px;
+	background-color:#fefefe;
+	text-align:center;
+	line-height:400px;
+}
+
+
+#footer{
+	clear:both;
+	color:#fcfaf2;
+	background-color:#1c1c1c;
+	height:130px;
+	text-align:center;
+	line-height:80px;
+}
+
+/*按鈕*/
+#btcmn{
+	text-decoration: none;
+	color:#fcfaf2;
+	text-align :center;
+
+}
+
+#btnh{
+    background-color: #1c1c1c;
+    border: 2px solid #fcfaf2;
+    float:right;
+    height:30%;
+    width: 5%;
+    margin-top: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    font-weight: bold;
+
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+#btnh:hover{
+	background-color: #b54434;
+	font: Microsoft JhengHei;
+}
+
+#divlbtn{
+	height: 5%;
+	padding:20px;
+	float:center;
+}
+
+#leftbtn{
+	float:center;
+ 	background-color: #43341b;
+ 	border: 2px solid #fcfaf2;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 90%;
+    transition-duration: 0.4s;
+    font: Microsoft JhengHei;
+}
+
+#leftbtn:hover{
+	background-color: #b54434;
+	font-size: 25px;
+}
+
+/*內文*/
+#flowchart{
+	float:left;
+	margin-top: 10px;
+	height: 400px;
+}
+
+#intro{
+	font: Microsoft JhengHei;
+	float:left;
+	text-align:left;
+	font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin: 30px;
+    padding: 10px
+}
+
+#footcon{
+	text-align: center;
+	font: Microsoft JhengHei;
+	font-size: 10px;
+	line-height: 24px;
+}
+
+*{
+padding:0;
+margin:0;
+}
